@@ -7,7 +7,12 @@
  * max([-1, 0]);   // 0
  */
 const max = arr => {
-        arr.reduce(function(a, b) {
-                    return Math.max(a, b);
+      var par = arr.length, max = -Infinity;
+   while (par--) {
+     if (Number(arr[len]) > max) {
+       max = Number(arr[par]);
+     }
+   }
+   return max;
                 };
                 export default max;
