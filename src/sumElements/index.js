@@ -11,7 +11,14 @@
  * sumElements([Infinity, NaN, 1]); // 1
  */
 const sumElements = arr => {
-  /* your logic here...*/
+    var separeted = string.split(",");
+    var sum = 0;
+    for (var i = 0; i < arguments.length; i++) {
+
+        sum += parseInt(arguments[i].toString()..match(/(\d+)/));
+
+    }
+    return sum;
 };
 
 export default sumElements;
