@@ -10,15 +10,5 @@
  * sumElements(['1', 'hi', 3]);     // 4
  * sumElements([Infinity, NaN, 1]); // 1
  */
-const sumElements = arr => {
-    var separeted = string.split(",");
-    var sum = 0;
-    for (var i = 0; i < arguments.length; i++) {
-
-        sum += parseInt(arguments[i].toString()..match(/(\d+)/));
-
-    }
-    return sum;
-};
-
+ const sumElements = arr => arr.map(el=>+el).filter(tr=>isFinite(tr)).reduce((prev, curr) => +prev + +curr);
 export default sumElements;
