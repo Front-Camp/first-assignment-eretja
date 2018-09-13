@@ -6,9 +6,9 @@
  * getFlags(arr); // [1, 2, 3, 4, 5, 6]
  */
 const getFlags = arr => {
-    var result = arr[0].flags;
-    for (i = 0; i < arr[1].flags.length; ++i) {
-        result[result.length] = arr[1].flags[i];
+    var result = [];
+    for (i = 0; i < arr.length; ++i) {
+        result = result.concat(arr[i].flags);
     }
     return result;
 };
