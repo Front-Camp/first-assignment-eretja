@@ -8,7 +8,11 @@
  * isObject(null); // false
  */
 const isObject = data => {
-  /* your logic here...*/
+    if (data === null) {
+        return false;
+    } else {
+        return data.constructor === ({}).constructor;
+    }
 };
 
 export default isObject;
